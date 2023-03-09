@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="h1"></h1>
+    <h1 id="h2"></h1>
+    <script>
+      // no return no parameter
+      function addNumber1() {
+        let a = 10;
+        let b = 20;
+        //console.log(a + b);
+        document.getElementById('h1').innerHTML = a + b
+      }
+
+      // with return no parameter
+      function addNumber2() {
+        let a = 10;
+        let b = 20;
+        return a + b;
+      }
+
+      // with return with parameter
+      function addNumber3(a, b) {
+        return a + b;
+      }
+
+      // no return with parameter
+      function addNumber4(a, b) {
+        console.log(a + b);
+      }
+
+      addNumber1()
+      
+      let result1 =  addNumber2()
+      // console.log(result1 + 100)
+      document.getElementById('h1').innerHTML = result1
+      document.getElementById('h2').innerHTML = result1
+      
+      let result2 = addNumber3(100, 200)
+      console.log(result2)
+      
+      addNumber4(100, 200)
+    </script>
+  </body>
+</html>
